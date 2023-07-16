@@ -1,0 +1,17 @@
+<!-- HTML file for including the require srcipt for enabling the define
+   function and to load all the modules through require.js-->
+   
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AMD Module Example</title>
+</head>
+<body>
+  <script src="/require.js" data-main="index.js"></script>
+  <script>
+    require(['/src/RTree'], function () {
+      // The module is loaded and executed here
+    });
+  </script>
+</body>
+</html>
